@@ -6,7 +6,7 @@ const app=express()
 require('dotenv').config()
 app.use(cors())
 app.use((req, res, next) => {
-    res.removeHeader('Cross-Origin-Opener-Policy'); // Remove the header
+    // res.removeHeader('Cross-Origin-Opener-Policy'); // Remove the header
     // Alternatively, adjust the header
     // res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
     // res.setHeader('Cross-Origin-Opener-Policy', 'unsafe-none');
